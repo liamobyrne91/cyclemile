@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="As part of the Multimedia 4 Project (COMP10027) module, I developed an interactive web application that allows users to locate their current location and track their journey whilst retrieving relevant journey information via GPS/Wi-Fi. I used HTML5, CSS3, JavaScript and PHP to develop the web application. The aim of the project was to demonstrate the potential of web applications and compare it against current native applications. The successful planning, development and evaluation of the project reflected on my overall grade of a B1.">
+<title>CycleMile | Contact</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <div id="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="track.html">Track</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div id="content1_contact">
+    <h1>Contact</h1>
+    <p>Please complete the following contact form and we will respond to your message as soon as possible.</p>
+  </div>
+  <div id="content2_contact">
+    <form id="contact" action="../php/contact.php" method="post" autocomplete="off">
+      <table>
+        <tr>
+          <td><label for="fname">Forename:</label></td>
+          <td><input type="text" id="fname" name="fname" class="stored" placeholder="Forename" required/></td>
+        </tr>
+        <tr>
+          <td><label for="sname">Surname:</label></td>
+          <td><input type="text" id="sname" name="sname" class="stored" placeholder="Surname" required/></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" class="stored" placeholder="Email" required/></td>
+        </tr>
+        <tr>
+          <td><label for="message">Message:</label></td>
+          <td><textarea id="message" name="message" rows="5" cols="20" class="stored" placeholder="Message" required></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Submit" id="submit" onClick="clearStorage ();" /></td>
+        </tr>
+      </table>
+    </form>
+    <div id="response"></div>
+  </div>
+  </main>
+  <footer> <em>&copy; 2013 CycleMile</em> </footer>
+</div>
+<script src="../js/jquery-1.11.3.min.js"></script> 
+<script src="../js/jquery.validate.min.js"></script> 
+<script src="../js/jquery.form.js"></script> 
+<script src="../js/contact.js"></script> 
+<script src="../js/sessionstorage.js"></script>
+</body>
+</html>
